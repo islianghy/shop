@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<generatorConfiguration >
+<classPathEntry
+        location="C:\Users\lians\Desktop\mysql-connector-java-5.1.21.jar" />
+  <context id="context1" >
+ 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.1.140:3306/lsjf?useUnicode=true&amp;characterEncoding=UTF-8" userId="root" password="123456" />
+    <javaModelGenerator targetPackage="com.lsjf.model"  targetProject="LSJF" />
+    <sqlMapGenerator targetPackage="com.lsfj.mapping" targetProject="LSJF" />
+    <javaClientGenerator targetPackage="com.lsjf.dao"  targetProject="LSJF" type="XMLMAPPER" />
+        <table schema="lsjf" tableName="user"  domainObjectName="user"  >
+     	</table>
+    
+  </context>
+</generatorConfiguration>
+
+
+

@@ -55,7 +55,7 @@ public class UserController {
 			 Date dt=new Date();
 			//SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 			// df.format(new Date())
-			record.setCreatetime(dt);
+//			record.setCreatetime(dt);
 			System.out.println(record);
 			String str = userService.createuser(record);
 			System.out.println(str);

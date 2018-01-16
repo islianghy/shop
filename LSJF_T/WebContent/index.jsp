@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -23,6 +23,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
+   <form action="createuser.do" method="post">
+   		姓名：<input type="text" id="name"><br>
+   		性别：男<input type="radio" id="sex" value="1">女<input type="radio" id="sex" value="0"><br>
+   		年龄：<input type="text" id="age"><br>
+   		<input type="reset" value="重置">
+   		<input type="submit" value="提交">
+   </form>
   </body>
 </html>

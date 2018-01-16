@@ -7,10 +7,10 @@
   <context id="context1" >
  
     <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.1.140:3306/lsjf?useUnicode=true&amp;characterEncoding=UTF-8" userId="root" password="123456" />
-    <javaModelGenerator targetPackage="com.lsjf.model"  targetProject="LSJF" />
-    <sqlMapGenerator targetPackage="com.lsfj.mapping" targetProject="LSJF" />
-    <javaClientGenerator targetPackage="com.lsjf.dao"  targetProject="LSJF" type="XMLMAPPER" />
-        <table schema="lsjf" tableName="user"  domainObjectName="user"  >
+    <javaModelGenerator targetPackage="com.lsjf.model"  targetProject="LSJF_T" />
+    <sqlMapGenerator targetPackage="com.lsfj.mapping" targetProject="LSJF_T" />
+    <javaClientGenerator targetPackage="com.lsjf.dao"  targetProject="LSJF_T" type="XMLMAPPER" />
+        <table schema="LSJF_T" tableName="user"  domainObjectName="User"  >
      	</table>
     
   </context>
